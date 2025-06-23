@@ -3,103 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlpEffix – Efficiency. Performance. Simplified.</title>
+  <title>AlpEffix – Efficiency. Performance. Simplified.</title>
   <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="font-sans antialiased text-slate-800">
-  <!-- Header -->
-  <header class="fixed top-0 inset-x-0 z-50 bg-white/70 backdrop-blur shadow-sm">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-      <a href="#home" class="flex items-center space-x-2">
-        <img src="images/alpeffix-logo.png" alt="AlpEffix logo" class="h-8 w-auto" />
+  <!-- ▾▾▾  HEADER  ▾▾▾ -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <!-- Logo file: place logo.png in the same folder or adjust the path -->
+      <a href="#home" class="flex items-center gap-2">
+        <img src="logo.png" alt="AlpEffix logo" class="h-10 w-auto" />
         <span class="sr-only">AlpEffix</span>
       </a>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#services" class="hover:text-blue-600">Solutions</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about"   class="hover:text-sky-600">About</a>
+        <a href="#values"  class="hover:text-sky-600">Values</a>
+        <a href="#markets" class="hover:text-sky-600">Markets</a>
+        <a href="#contact" class="hover:text-sky-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="relative pt-28 pb-32 bg-gradient-to-br from-blue-100 via-white to-white">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Efficiency. Performance. <span class="text-blue-600">Simplified.</span></h1>
-      <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 mb-10">Swiss‑based industrial partner delivering smarter hardware & software to streamline operations and power innovation across Europe.</p>
-      <a href="#contact" class="inline-block px-8 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">Get in touch</a>
-    </div>
-    <!-- subtle Swiss cross -->
-    <div class="absolute top-8 right-8 flex items-center justify-center h-8 w-8 border border-slate-300 rounded bg-white/70">
-      <span class="text-xs font-bold text-slate-600">+</span>
+  <!-- ▾▾▾  HERO  ▾▾▾ -->
+  <section id="home" class="relative h-[75vh] flex items-center justify-center text-center">
+    <!-- Hero background → add your own hi‑res production-line.jpg in the site folder -->
+    <img src="production-line.jpg" alt="Modern production line" class="absolute inset-0 h-full w-full object-cover opacity-40" />
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-6xl font-bold text-slate-900 drop-shadow">Efficiency. Performance. Simplified.</h1>
+      <p class="mt-6 text-lg text-slate-700">Swiss‑made industrial solutions delivering measurable gains in productivity and clarity.</p>
+      <a href="#contact" class="mt-10 inline-block px-8 py-3 rounded-xl bg-sky-600 text-white shadow hover:bg-sky-700 transition">Talk to us</a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-24 bg-white">
-    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+  <!-- ▾▾▾  ABOUT  ▾▾▾ -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="text-3xl font-bold mb-4">Born in the Alps, built for industry.</h2>
-        <p class="text-slate-600 mb-4">AlpEffix is a one‑person consultancy and reseller dedicated to boosting operational excellence. From advanced industrial equipment to intelligent software platforms, we curate, integrate and support the tools that make factories run smarter.</p>
-        <p class="text-slate-600">With roots in Switzerland and clients across France, Spain and Germany, we speak the languages of precision, productivity and trust.</p>
+        <h2 class="text-3xl font-semibold mb-4">Who we are</h2>
+        <p class="text-slate-600 leading-relaxed">Based in Switzerland, <strong>AlpEffix</strong> empowers industrial teams by reselling best‑in‑class equipment and software and integrating everything into a seamless workflow.</p>
       </div>
-      <img src="images/factory-lines.jpg" alt="Modern production line" class="rounded-xl shadow-lg" />
+      <img src="https://images.unsplash.com/photo-1581092580499-e0ff47e3483d?auto=format&fit=crop&w=800&q=60" alt="Factory floor" class="rounded-2xl shadow-lg w-full h-64 object-cover" />
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-24 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">What we deliver</h2>
-      <div class="grid gap-8 md:grid-cols-3">
-        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 12c-.55 0-1-.45-1-1 0-.27.11-.52.29-.71C11.48 10.11 11.73 10 12 10s.52.11.71.29c.19.19.29.44.29.71 0 .55-.45 1-1 1z" /></svg>
-          <h3 class="text-xl font-semibold mb-2">Industrial Software</h3>
-          <p class="text-slate-600">MES, SCADA, data analytics &amp; maintenance suites tailored to your production flow.</p>
+  <!-- ▾▾▾  VALUES  ▾▾▾ -->
+  <section id="values" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-12">Our Guiding Values</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="text-xl font-medium mb-2">Efficiency</h3>
+          <p class="text-sm text-slate-600">Lean solutions that remove friction from operations.</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16l2-2m0 0l7-7 4 4 8-8m-8 8h.01M6 22h.01" /></svg>
-          <h3 class="text-xl font-semibold mb-2">Equipment Sourcing</h3>
-          <p class="text-slate-600">Reliable machinery and components sourced from proven European partners.</p>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="text-xl font-medium mb-2">Performance</h3>
+          <p class="text-sm text-slate-600">We deliver measurable gains, not just promises.</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-          <h3 class="text-xl font-semibold mb-2">Process Optimisation</h3>
-          <p class="text-slate-600">Consulting &amp; integration that translate tech into tangible ROI.</p>
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="text-xl font-medium mb-2">Simplicity</h3>
+          <p class="text-sm text-slate-600">Intuitive tools that teams actually enjoy using.</p>
         </div>
-      </div><!-- grid -->
+        <div class="p-6 bg-white rounded-2xl shadow">
+          <h3 class="text-xl font-medium mb-2">Innovation</h3>
+          <p class="text-sm text-slate-600">Future‑proof technologies and continuous improvement.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 bg-white">
-    <div class="max-w-xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Let’s talk efficiency</h2>
-      <p class="text-slate-600 mb-8">Ready to simplify your operations? Reach out and we’ll craft the solution that fits.</p>
-      <form action="#" method="post" class="grid gap-4">
-        <input type="text" name="name" placeholder="Name" class="p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600" required />
-        <input type="email" name="email" placeholder="Email" class="p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600" required />
-        <textarea name="message" rows="4" placeholder="Message" class="p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600" required></textarea>
-        <button type="submit" class="py-3 px-8 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition">Send Message</button>
+  <!-- ▾▾▾  MARKETS  ▾▾▾ -->
+  <section id="markets" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Industries We Serve</h2>
+      <p class="text-slate-600 mb-10">Automotive · Food & Beverage · Pharma · Discrete Manufacturing · Logistics</p>
+    </div>
+  </section>
+
+  <!-- ▾▾▾  CONTACT  ▾▾▾ -->
+  <section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Contact Us</h2>
+      <!-- Replace action with your own backend endpoint or keep mailto for quick POC -->
+      <form action="mailto:info@alpeffix.ch" method="post" enctype="text/plain" class="grid gap-6">
+        <input type="text" name="name" placeholder="Name" required class="p-4 rounded-xl border border-slate-300" />
+        <input type="email" name="email" placeholder="Email" required class="p-4 rounded-xl border border-slate-300" />
+        <textarea name="message" rows="4" placeholder="Your message" class="p-4 rounded-xl border border-slate-300"></textarea>
+        <button type="submit" class="py-3 rounded-xl bg-sky-600 text-white shadow hover:bg-sky-700 transition">Send</button>
       </form>
-      <p class="mt-8 text-sm text-slate-500">Based in Switzerland · Serving Europe</p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-50 py-6 text-center text-sm text-slate-500">
-    &copy; <span id="year"></span> AlpEffix. All rights reserved.
+  <!-- ▾▾▾  FOOTER  ▾▾▾ -->
+  <footer class="py-8 bg-white text-center text-sm text-slate-500">
+    © 2025 AlpEffix. All rights reserved.
   </footer>
-
-  <script>
-    // Update current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
